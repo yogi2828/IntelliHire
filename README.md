@@ -1,4 +1,4 @@
-# recruitswift
+# IntelliHire
 
 A new Flutter project.
 
