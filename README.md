@@ -59,7 +59,7 @@ We designed specialized backend agents to streamline hiring:
 ## 🚀 Core Features
 
 * **Smart JD Analysis:** Extracts and summarizes job requirements.
-* **Bulk Resume Uploads:** Add up to 10 resumes at once (PDF, image, Word).
+* **Bulk Resume Uploads:** Add up to 100 or more resumes at once (PDF, image, Word).
 * **AI Resume Reader:** Parses content intelligently.
 * **Match Scoring:** Evaluates candidate fit using AI.
 * **Shortlisting Engine:** Auto-selects top candidates based on job match.
@@ -116,64 +116,14 @@ We designed specialized backend agents to streamline hiring:
 ### App UI Highlights
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; text-align: center;">
+🖥️ Splash & Job Description Pages
+<div align="center"> <table> <tr> <td align="center"><b>Splash Screen</b></td> <td align="center"><b>Job Description Page 1</b></td> <td align="center"><b>Job Description Page 2</b></td> </tr> <tr> <td><img src="assets/images/splash_screen.jpg" width="200" style="margin:10px"/></td> <td><img src="assets/images/job_description_page.jpg" width="200" style="margin:10px"/></td> <td><img src="assets/images/job_description_page1.jpg" width="200" style="margin:10px"/></td> </tr> </table> </div>
 
-<!-- Row 1 -->
-
-<div>
-  <strong>Splash Screen</strong><br/>
-  <img src="assets/images/splash_screen.jpg" width="150"/>
-</div>
-<div>
-  <strong>Job Description Page</strong><br/>
-  <img src="assets/images/job_description_page.jpg" width="150"/>
-</div>
-<div>
-  <strong>JD Page Variant</strong><br/>
-  <img src="assets/images/job_description_page1.jpg" width="150"/>
-</div>
-
-<!-- Row 2 -->
-
-<div>
-  <strong>CV Analysis Overview</strong><br/>
-  <img src="assets/images/cv_analysis_page.jpg" width="150"/>
-</div>
-<div>
-  <strong>CV Analysis Detail 1</strong><br/>
-  <img src="assets/images/cv_analysis_page_1.jpg" width="150"/>
-</div>
-<div>
-  <strong>CV Analysis Detail 2</strong><br/>
-  <img src="assets/images/cv_analysis_page_2.jpg" width="150"/>
-</div>
-
-<!-- Row 3 -->
-
-<div>
-  <strong>Resume Viewer</strong><br/>
-  <img src="assets/images/cv_analysis_page_with_resume.jpg" width="150"/>
-</div>
-<div>
-  <strong>Candidate Analysis</strong><br/>
-  <img src="assets/images/cv_analysis_of_candidate.jpg" width="150"/>
-</div>
-<div>
-  <strong>Shortlisting View</strong><br/>
-  <img src="assets/images/shortlisting.jpg" width="150"/>
-</div>
-
-<!-- Row 4 -->
-
-<div>
-  <strong>Alternate Shortlist View</strong><br/>
-  <img src="assets/images/shortlisting1.jpg" width="150"/>
-</div>
-<div>
-  <strong>Email Initiation</strong><br/>
-  <img src="assets/images/email.jpg" width="150"/>
-</div>
-
-</div>
+📄 CV Analysis Pages
+<div align="center"> <table> <tr> <td align="center"><b>CV Overview</b></td> <td align="center"><b>CV Detail 1</b></td> <td align="center"><b>CV Detail 2</b></td> </tr> <tr> <td><img src="assets/images/cv_analysis_page.jpg" width="200" style="margin:10px"/></td> <td><img src="assets/images/cv_analysis_page_1.jpg" width="200" style="margin:10px"/></td> <td><img src="assets/images/cv_analysis_page_2.jpg" width="200" style="margin:10px"/></td> </tr> </table> </div>
+<div align="center"> <table> <tr> <td align="center"><b>Resume Viewer</b></td> <td align="center"><b>Candidate Analysis</b></td> <td align="center"><b>&nbsp;</b></td> </tr> <tr> <td><img src="assets/images/cv_analysis_page_with_resume.jpg" width="200" style="margin:10px"/></td> <td><img src="assets/images/cv_analysis_of_candidate.jpg" width="200" style="margin:10px"/></td> <td></td> </tr> </table> </div>
+✅ Shortlisting & Contact
+<div align="center"> <table> <tr> <td align="center"><b>Shortlist View 1</b></td> <td align="center"><b>Shortlist View 2</b></td> <td align="center"><b>Email Screen</b></td> </tr> <tr> <td><img src="assets/images/shortlisting.jpg" width="200" style="margin:10px"/></td> <td><img src="assets/images/shortlisting1.jpg" width="200" style="margin:10px"/></td> <td><img src="assets/images/email.jpg" width="200" style="margin:10px"/></td> </tr> </table> </div>
 
 ---
 
