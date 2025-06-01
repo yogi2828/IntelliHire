@@ -1,8 +1,12 @@
 # IntelliHire 🚀
 
+<p align="center">
+  <img src="assets/images/logo.png" alt="IntelliHire Logo" width="150"/>
+</p>
+
 **Smart Hiring, Made Simple.**
 
-IntelliHire is your AI-powered assistant for recruitment! It helps make hiring faster and easier by using an **advanced AI model** to automate time-consuming tasks like reviewing Job Descriptions (JDs) and CVs, shortlisting candidates, and preparing for interviews.
+Welcome to IntelliHire! This app is like a smart assistant for recruiters. It helps make the hiring process easier and faster by using an **advanced AI model** to handle some of the most time-consuming tasks. Imagine quickly finding the best candidates without spending hours reading every single CV!
 
 ---
 
@@ -75,7 +79,7 @@ IntelliHire tackles these issues with its "AI helper" agents:
 
 ### High-Level Flowchart
 
-*(This is where you'll insert your flowchart image!)*
+*(This is where you'll insert your actual flowchart image! If you don't have one, you can describe the steps simply or remove this sub-section.)*
 
 **A quick text description of the flow:**
 1.  Recruiter enters Job Details in the Flutter app.
@@ -109,16 +113,71 @@ IntelliHire's smarts are organized into logical "agents" working in the backend:
 
 ## 📱 Application Screenshots
 
-*(Add your app screenshots here! This helps people see what IntelliHire looks like.)*
+Here's a glimpse of IntelliHire in action!
 
-* `[Screenshot of Login Screen]`
-* `[Screenshot of Job Description Entry Screen]`
-* `[Screenshot of CV Upload Interface (showing file/camera options)]`
-* `[Screenshot of Candidate List with AI Scores]`
-* `[Screenshot of Shortlisted Candidates View]`
+**Initial Views:**
+* **Splash Screen:**
+    <img src="assets/images/splash_screen.jpg" alt="IntelliHire Splash Screen" width="300"/>
 
+**Job Description Management:**
+* **Job Description Page Example 1:**
+    <img src="assets/images/job_description_page.jpg" alt="Job Description Page" width="300"/>
+* **Job Description Page Example 2:**
+    <img src="assets/images/job_description_page1.jpg" alt="Another Job Description Page" width="300"/>
+
+**CV Analysis Process:**
+* **CV Analysis Overview Page:**
+    <img src="assets/images/cv_analysis_page.jpg" alt="CV Analysis Page Overview" width="300"/>
+* **CV Analysis Details (Example 1):**
+    <img src="assets/images/cv_analysis_page_1.jpg" alt="CV Analysis Details 1" width="300"/>
+* **CV Analysis Details (Example 2):**
+    <img src="assets/images/cv_analysis_page_2.jpg" alt="CV Analysis Details 2" width="300"/>
+* **CV Analysis with Resume View:**
+    <img src="assets/images/cv_analysis_page_with_resume....jpg" alt="CV Analysis with Resume View" width="300"/> * **Individual Candidate Analysis:**
+    <img src="assets/images/cv_analysis_of_candidate.jpg" alt="CV Analysis of a Specific Candidate" width="300"/>
+
+**Shortlisting & Contact:**
+* **Shortlisting View Example 1:**
+    <img src="assets/images/shortlisting.jpg" alt="Shortlisting View" width="300"/>
+* **Shortlisting View Example 2:**
+    <img src="assets/images/shortlisting1.jpg" alt="Another Shortlisting View" width="300"/>
+* **Email Initiation Screen:**
+    <img src="assets/images/email.jpg" alt="Email Initiation Screen" width="300"/>
 ---
 
 ## 📂 File Structure (A Quick Look)
 
 ### Flutter App (`lib/` folder)
+
+intellihire_app/
+├── lib/
+│   ├── main.dart         # App starts here
+│   ├── models/           # Data structures
+│   ├── screens/          # App pages
+│   └── services/         # Helpers for backend, etc.
+├── assets/
+│   └── images/           # Your app screenshots and logo
+│       ├── cv_analysis_of_candidate.jpg
+│       ├── cv_analysis_page.jpg
+│       ├── ... (all your other images)
+│       └── splash_screen.jpg
+└── pubspec.yaml        # App tools (ensure assets are declared here)
+
+**(Remember to declare your `assets/images/` folder in your `pubspec.yaml` file under `flutter:` `assets:`)**
+```yaml
+# pubspec.yaml
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/ # This line includes all files in the images folder
+Python Cloud Functions (functions/ folder - for backend)
+functions/
+├── main.py             # Python code for AI helpers
+└── requirements.txt    # Python tools needed
+📄 License
+This project is under the [Your License Type, e.g., MIT License]. See LICENSE file.
+
+🧑‍💻 The IntelliHire Team
+   1. Bhushan Dhoble
+   2. Amol Dhote
+   3. Yogendra Karri
