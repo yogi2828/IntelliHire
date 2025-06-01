@@ -1,4 +1,4 @@
-# IntelliHire 🚀
+# 🚀 IntelliHire
 
 <p align="center">
   <img src="assets/images/logo.png" alt="IntelliHire Logo" width="150"/>
@@ -6,178 +6,222 @@
 
 **Smart Hiring, Made Simple.**
 
-Welcome to IntelliHire! This app is like a smart assistant for recruiters. It helps make the hiring process easier and faster by using an **advanced AI model** to handle some of the most time-consuming tasks. Imagine quickly finding the best candidates without spending hours reading every single CV!
+Welcome to **IntelliHire**, your intelligent assistant for modern recruitment. Powered by **advanced AI**, it automates the most tedious parts of hiring—saving time, reducing bias, and helping you find top talent effortlessly.
 
 ---
 
-## ✨ IntelliHire: What It Does
+## ✨ What IntelliHire Does
 
-Recruiting can be overwhelming. IntelliHire uses its **smart AI model** to help you:
-* Quickly understand what each job requires.
-* Automatically read and get key info from CVs (PDFs, images, text).
-* Match the right CVs to the right jobs.
-* Create a shortlist of the best candidates.
-* Get ready to contact them for interviews.
+Hiring can be overwhelming. IntelliHire uses smart AI to:
+
+* 🔍 Understand job requirements instantly.
+* 📄 Extract insights from resumes (PDF, images, text).
+* 🎯 Match candidates to job needs.
+* ✅ Auto-generate shortlists.
+* 📞 Help initiate interview outreach.
 
 ---
 
 ## 🎯 The Problem We're Solving
 
-**(Hackathon Problem ID: R1-05 - Enhancing Job Screening)**
+**Hackathon Problem ID: R1-05 - Enhancing Job Screening**
 
-Traditional hiring is tough:
-* **Too Time-Consuming:** Recruiters can spend about **23 hours** screening CVs for just one hire (Eddy.com).
-* **Costly & Slow:** Manual work makes hiring take longer and cost more.
-* **Prone to Errors & Bias:** Humans can make mistakes or be unintentionally biased.
-* **Hard to Scale:** Many companies get too many CVs to review them all properly (TestGorilla).
+Recruitment challenges:
 
-**Result:** Longer hiring times, higher costs, and potentially missing out on great talent.
+* ⏳ **Time-Consuming:** Screening one hire can take \~23 hours (Eddy.com).
+* 💸 **Costly & Slow:** Manual tasks delay the process.
+* ⚖️ **Prone to Bias:** Human screening can be inconsistent.
+* 📈 **Hard to Scale:** Companies often receive more CVs than they can properly review.
+
+**Result:** Delayed hiring, higher costs, and missed opportunities.
 
 ---
 
-## 💡 Our Solution: IntelliHire
+## 💡 Our Solution: IntelliHire AI Agents
 
-IntelliHire tackles these issues with its "AI helper" agents:
-1.  **Smart JD Analysis:** The AI understands job descriptions.
-2.  **Efficient CV Processing:** The AI reads CVs and extracts key details.
-3.  **Accurate Matching:** AI compares CVs to job needs.
-4.  **Automated Shortlisting:** Creates a list of top candidates based on your rules.
-5.  **Easy Interview Prep:** Helps you contact shortlisted candidates.
+We designed specialized backend agents to streamline hiring:
+
+1. **JD Helper:** Parses and understands job descriptions.
+2. **CV Helper:** Reads resumes and extracts essential data.
+3. **Matching Agent:** Aligns resumes with job criteria.
+4. **Shortlisting Agent:** Generates a top candidate list.
+5. **Interview Agent:** Assists in initiating outreach.
 
 **Benefits:**
-* Saves lots of time.
-* More accurate and fair.
-* Faster shortlisting.
-* Lets recruiters focus on people, not paperwork!
+
+* ⏱️ Huge time savings
+* 🧠 AI-driven precision
+* 💼 Ready-to-contact candidate lists
+* 🤝 Recruiters can focus on people, not paperwork
 
 ---
 
 ## 🚀 Core Features
 
-* **Easy Job Input:** Add job details and what you're looking for (skills, experience, etc.).
-* **AI JD Helper:** Summarizes JDs and finds key requirements using our **trained AI model**.
-* **CV Uploader:** Upload up to **10 CVs at once** (PDF, Word, text, images from camera/files).
-* **AI CV Reader:** Extracts info from CVs using our **AI model**.
-* **AI Matching:** Scores how well each CV fits the job.
-* **Automated Shortlisting:** Creates a top candidate list based on your settings.
-* **Interview Assistance:** Helps start the interview process.
-* **History Tracking:** Saves all your jobs and shortlists.
+* **Smart JD Analysis:** Extracts and summarizes job requirements.
+* **Bulk Resume Uploads:** Add up to 10 resumes at once (PDF, image, Word).
+* **AI Resume Reader:** Parses content intelligently.
+* **Match Scoring:** Evaluates candidate fit using AI.
+* **Shortlisting Engine:** Auto-selects top candidates based on job match.
+* **Interview Assistance:** Simplifies the next steps.
+* **Job & Resume History:** Keeps all your past sessions saved.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **App:** Flutter (Dart) – For Android & iOS.
-* **Backend Logic:** Python Cloud Functions on Firebase – Securely runs our AI tasks.
-* **AI Engine:** **A sophisticated trained AI model** (accessed securely from our backend).
-* **Database:** Firebase Firestore – Stores all app data.
-* **Login:** Firebase Authentication.
+* **Frontend:** Flutter (Dart) – Android & iOS support.
+* **Backend:** Python Cloud Functions (Firebase).
+* **AI Model:** Custom-trained LLM for parsing and matching.
+* **Database:** Firebase Firestore.
+* **Authentication:** Firebase Auth.
 
 ---
 
-## 🌊 How IntelliHire Works (System Flow)
+## 🌐 System Overview
 
-### High-Level Flowchart
+### 🔁 Workflow
 
-*(This is where you'll insert your actual flowchart image! If you don't have one, you can describe the steps simply or remove this sub-section.)*
+1. Recruiter adds job info.
+2. JD Helper processes the description.
+3. Recruiter uploads resumes.
+4. CV Helper extracts and evaluates resume data.
+5. Matching Agent scores resumes.
+6. Shortlisting Agent filters top candidates.
+7. Interview Agent helps begin outreach.
 
-**A quick text description of the flow:**
-1.  Recruiter enters Job Details in the Flutter app.
-2.  A Python Cloud Function uses the **AI model** to understand the JD & saves it.
-3.  Recruiter uploads CVs in the app.
-4.  Another Cloud Function uses the **AI model** to read each CV, compare it to the JD, and score it. Results are saved.
-5.  Recruiter tells the app to create a shortlist.
-6.  A Cloud Function applies the recruiter's rules to the scores and marks the top candidates.
-7.  Recruiter views the shortlist and can start contacting candidates.
+### 🧩 Architecture
 
-### Simple Architecture
-
-* **Flutter App:** The part the recruiter uses.
-* **Python Cloud Functions:** Secure "helpers" in the cloud that use the **AI model**.
-* **Firebase:** Handles login and data storage.
-* **AI Model (via API):** The "brain" that understands text and helps with analysis.
+* **Flutter App** – User-facing interface
+* **Cloud Functions (Python)** – Executes backend AI logic
+* **Firebase Auth + Firestore** – Secure login & data storage
+* **AI Model (API Accessed)** – Powers all intelligent decisions
 
 ---
 
-## 🤖 Our "AI Helper" Team (Logical Agents)
+## 🤖 AI Helper Agents Breakdown
 
-IntelliHire's smarts are organized into logical "agents" working in the backend:
-
-* **JD Helper:** Understands JDs using the **AI model**.
-* **CV Helper:** Reads CVs and extracts info using the **AI model**.
-* **Matching Helper:** Compares CVs to JDs using the **AI model's** understanding.
-* **Shortlisting Helper:** Applies recruiter rules to pick the top candidates.
-* **Interview Helper:** Helps start the interview process (currently via your phone's email app).
+| Agent                  | Description                                 |
+| ---------------------- | ------------------------------------------- |
+| **JD Helper**          | Understands and summarizes job descriptions |
+| **CV Helper**          | Reads, extracts, and interprets CV data     |
+| **Matching Agent**     | Aligns candidate profiles with job needs    |
+| **Shortlisting Agent** | Ranks and shortlists top candidates         |
+| **Interview Agent**    | Supports outreach (via default email app)   |
 
 ---
 
-## 📱 Application Screenshots
+## 📱 IntelliHire Screenshots
 
-Here's a glimpse of IntelliHire in action!
+### App UI Highlights
 
-**Initial Views:**
-* **Splash Screen:**
-    <img src="assets/images/splash_screen.jpg" alt="IntelliHire Splash Screen" width="300"/>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; text-align: center;">
 
-**Job Description Management:**
-* **Job Description Page Example 1:**
-    <img src="assets/images/job_description_page.jpg" alt="Job Description Page" width="300"/>
-* **Job Description Page Example 2:**
-    <img src="assets/images/job_description_page1.jpg" alt="Another Job Description Page" width="300"/>
+<!-- Row 1 -->
 
-**CV Analysis Process:**
-* **CV Analysis Overview Page:**
-    <img src="assets/images/cv_analysis_page.jpg" alt="CV Analysis Page Overview" width="300"/>
-* **CV Analysis Details (Example 1):**
-    <img src="assets/images/cv_analysis_page_1.jpg" alt="CV Analysis Details 1" width="300"/>
-* **CV Analysis Details (Example 2):**
-    <img src="assets/images/cv_analysis_page_2.jpg" alt="CV Analysis Details 2" width="300"/>
-* **CV Analysis with Resume View:**
-    <img src="assets/images/cv_analysis_page_with_resume....jpg" alt="CV Analysis with Resume View" width="300"/> * **Individual Candidate Analysis:**
-    <img src="assets/images/cv_analysis_of_candidate.jpg" alt="CV Analysis of a Specific Candidate" width="300"/>
+<div>
+  <strong>Splash Screen</strong><br/>
+  <img src="assets/images/splash_screen.jpg" width="150"/>
+</div>
+<div>
+  <strong>Job Description Page</strong><br/>
+  <img src="assets/images/job_description_page.jpg" width="150"/>
+</div>
+<div>
+  <strong>JD Page Variant</strong><br/>
+  <img src="assets/images/job_description_page1.jpg" width="150"/>
+</div>
 
-**Shortlisting & Contact:**
-* **Shortlisting View Example 1:**
-    <img src="assets/images/shortlisting.jpg" alt="Shortlisting View" width="300"/>
-* **Shortlisting View Example 2:**
-    <img src="assets/images/shortlisting1.jpg" alt="Another Shortlisting View" width="300"/>
-* **Email Initiation Screen:**
-    <img src="assets/images/email.jpg" alt="Email Initiation Screen" width="300"/>
+<!-- Row 2 -->
+
+<div>
+  <strong>CV Analysis Overview</strong><br/>
+  <img src="assets/images/cv_analysis_page.jpg" width="150"/>
+</div>
+<div>
+  <strong>CV Analysis Detail 1</strong><br/>
+  <img src="assets/images/cv_analysis_page_1.jpg" width="150"/>
+</div>
+<div>
+  <strong>CV Analysis Detail 2</strong><br/>
+  <img src="assets/images/cv_analysis_page_2.jpg" width="150"/>
+</div>
+
+<!-- Row 3 -->
+
+<div>
+  <strong>Resume Viewer</strong><br/>
+  <img src="assets/images/cv_analysis_page_with_resume.jpg" width="150"/>
+</div>
+<div>
+  <strong>Candidate Analysis</strong><br/>
+  <img src="assets/images/cv_analysis_of_candidate.jpg" width="150"/>
+</div>
+<div>
+  <strong>Shortlisting View</strong><br/>
+  <img src="assets/images/shortlisting.jpg" width="150"/>
+</div>
+
+<!-- Row 4 -->
+
+<div>
+  <strong>Alternate Shortlist View</strong><br/>
+  <img src="assets/images/shortlisting1.jpg" width="150"/>
+</div>
+<div>
+  <strong>Email Initiation</strong><br/>
+  <img src="assets/images/email.jpg" width="150"/>
+</div>
+
+</div>
+
 ---
 
-## 📂 File Structure (A Quick Look)
+## 📁 Project Structure Overview
 
-### Flutter App (`lib/` folder)
+### `intellihire_app/`
 
+```
 intellihire_app/
 ├── lib/
-│   ├── main.dart         # App starts here
-│   ├── models/           # Data structures
-│   ├── screens/          # App pages
-│   └── services/         # Helpers for backend, etc.
+│   ├── main.dart             # App entry point
+│   ├── models/               # Data models
+│   ├── screens/              # UI Screens
+│   └── services/             # Backend communication
 ├── assets/
-│   └── images/           # Your app screenshots and logo
-│       ├── cv_analysis_of_candidate.jpg
-│       ├── cv_analysis_page.jpg
-│       ├── ... (all your other images)
-│       └── splash_screen.jpg
-└── pubspec.yaml        # App tools (ensure assets are declared here)
+│   └── images/               # Screenshots and logo
+├── pubspec.yaml              # Flutter dependencies & asset declaration
+```
 
-**(Remember to declare your `assets/images/` folder in your `pubspec.yaml` file under `flutter:` `assets:`)**
+### `functions/`
+
+```
+functions/
+├── main.py                   # AI logic via Cloud Functions
+└── requirements.txt          # Python dependencies
+```
+
+Ensure your `pubspec.yaml` includes the asset directory:
+
 ```yaml
-# pubspec.yaml
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/ # This line includes all files in the images folder
-Python Cloud Functions (functions/ folder - for backend)
-functions/
-├── main.py             # Python code for AI helpers
-└── requirements.txt    # Python tools needed
-📄 License
-This project is under the [Your License Type, e.g., MIT License]. See LICENSE file.
+    - assets/images/
+```
 
-🧑‍💻 The IntelliHire Team
-   1. Bhushan Dhoble
-   2. Amol Dhote
-   3. Yogendra Karri
+---
+
+## 📜 License
+
+This project is licensed under the **\[Insert License Name, e.g., MIT License]**. See the `LICENSE` file for details.
+
+---
+
+## 🧑‍💻 The IntelliHire Team
+
+1. **Bhushan Dhoble**
+2. **Amol Dhote**
+3. **Yogendra Karri**
+
+---
